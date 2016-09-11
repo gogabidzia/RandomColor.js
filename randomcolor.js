@@ -8,7 +8,7 @@ Object.prototype.randomColor = function(parameters) {
 		maxBlue: 255,
 		minBlue:0
 	}
-
+	//Default Parameters
 	for(var key in propDefaults){
 		if(parameters.hasOwnProperty(key)){
 			this[key] = parameters[key];
@@ -17,7 +17,7 @@ Object.prototype.randomColor = function(parameters) {
 			this[key] = propDefaults[key];
 		}
 	}
-
+	//Check if parameter is set or take it from Defaults
 	function getRandRed(maxRed, minRed){
 		return Math.floor(Math.random() * maxRed) + minRed;
 	}
@@ -27,7 +27,7 @@ Object.prototype.randomColor = function(parameters) {
 	function getRandBlue(maxBlue, minBlue){
 		return Math.floor(Math.random() * maxBlue) + minBlue;
 	}
-
+	//Functions for R G B to random between max and min.
 	if(typeof this.length =="undefined"){
 		this.style.backgroundColor = 'rgba('+getRandRed(this.maxRed, this.minRed)+','+getRandGreen(this.maxGreen, this.minGreen)+','+getRandBlue(this.maxBlue, this.minBlue)+','+this.opacity+')';
 	}
@@ -36,4 +36,5 @@ Object.prototype.randomColor = function(parameters) {
 			this[i].style.backgroundColor = 'rgba('+getRandRed(this.maxRed, this.minRed)+','+getRandGreen(this.maxGreen, this.minGreen)+','+getRandBlue(this.maxBlue, this.minBlue)+','+this.opacity+')';
 		}
 	}
+	//Check selector type
 }
