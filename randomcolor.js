@@ -36,5 +36,5 @@ Object.prototype.randomColor = function(parameters) {
 			this[i].style.backgroundColor = 'rgba('+getRandRed(this.maxRed, this.minRed)+','+getRandGreen(this.maxGreen, this.minGreen)+','+getRandBlue(this.maxBlue, this.minBlue)+','+this.opacity+')';
 		}
 	}
-	//Check selector type
+	//Check selector type and pick a random color for each.
 }
