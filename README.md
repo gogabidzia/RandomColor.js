@@ -43,4 +43,4 @@ document.getElementsByClassName("divsToRandom").randomColor({
 ![alt tag](http://i.imgur.com/8OXLISv.png)
 
 #Live example
-[Check RandColor on jsfiddle](https://jsfiddle.net/0w87986p/)
+[Check RandColor on jsfiddle](https://jsfiddle.net/0w87986p/2/)
