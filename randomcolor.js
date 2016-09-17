@@ -21,12 +21,6 @@ Object.prototype.randomColor = function(parameters) {
 	function getRandRed(maxRed, minRed){
 		return Math.floor(Math.random() * maxRed) + minRed;
 	}
-	function getRandGreen(maxGreen, minGreen){
-		return Math.floor(Math.random() * maxGreen) + minGreen;
-	}
-	function getRandBlue(maxBlue, minBlue){
-		return Math.floor(Math.random() * maxBlue) + minBlue;
-	}
 	//Functions for R G B to random between max and min.
 	if(typeof this.length =="undefined"){
 		this.style.backgroundColor = 'rgba('+getRandRed(this.maxRed, this.minRed)+','+getRandGreen(this.maxGreen, this.minGreen)+','+getRandBlue(this.maxBlue, this.minBlue)+','+this.opacity+')';
