@@ -18,16 +18,16 @@ Object.prototype.randomColor = function(parameters) {
 		}
 	}
 	//Check if parameter is set or take it from Defaults
-	function getRandRed(maxRed, minRed){
-		return Math.floor(Math.random() * maxRed) + minRed;
+	function getRandColor(maxColor, minColor){
+		return Math.floor(Math.random() * maxColor) + minColor;
 	}
 	//Functions for R G B to random between max and min.
 	if(typeof this.length =="undefined"){
-		this.style.backgroundColor = 'rgba('+getRandRed(this.maxRed, this.minRed)+','+getRandGreen(this.maxGreen, this.minGreen)+','+getRandBlue(this.maxBlue, this.minBlue)+','+this.opacity+')';
+		this.style.backgroundColor = 'rgba('+getRandColor(this.maxRed, this.minRed)+','+getRandColor(this.maxGreen, this.minGreen)+','+getRandColor(this.maxBlue, this.minBlue)+','+this.opacity+')';
 	}
 	else{
 		for (var i = 0; i < this.length; i++) {
-			this[i].style.backgroundColor = 'rgba('+getRandRed(this.maxRed, this.minRed)+','+getRandGreen(this.maxGreen, this.minGreen)+','+getRandBlue(this.maxBlue, this.minBlue)+','+this.opacity+')';
+			this[i].style.backgroundColor = 'rgba('+getRandColor(this.maxRed, this.minRed)+','+getRandColor(this.maxGreen, this.minGreen)+','+getRandColor(this.maxBlue, this.minBlue)+','+this.opacity+')';
 		}
 	}
 	//Check selector type and pick a random color for each.
