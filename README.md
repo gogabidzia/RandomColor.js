@@ -40,7 +40,7 @@ document.getElementsByClassName("divsToRandom").randomColor({
 });
 // Setting maxRed and maxBlue to zero means that divs should contain many types of green.
 ```
-![alt tag](http://i.imgur.com/8OXLISv.png)
+![scales of green](http://i.imgur.com/8OXLISv.png)
 
 #Live example
 [Check RandomColor on jsfiddle](https://jsfiddle.net/0w87986p/2/)
